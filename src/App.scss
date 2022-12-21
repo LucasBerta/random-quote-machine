@@ -1,0 +1,76 @@
+@use "./core/button.scss";
+
+$spacing: 2rem;
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  width: 55rem;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 4rem 5rem;
+  box-shadow: 0rem 0.6rem 1.5rem -0.5rem #000;
+}
+
+.quote {
+  display: inline-block;
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 500;
+
+  .quote-icon {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+}
+
+.author {
+  display: inline-block;
+  width: 100%;
+  margin-top: $spacing;
+  text-align: right;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: $spacing;
+
+  .social-medias {
+    a {
+      @extend button;
+      display: inline-block;
+      width: button.$height;
+      padding: calc(button.$height / 2 - calc(button.$fontSize / 2));
+      text-align: center;
+
+      &:not(:first-child) {
+        margin-left: 0.5rem;
+      }
+    }
+
+    i {
+      color: #fff;
+    }
+  }
+}
+
+.credits {
+  margin-top: $spacing;
+  color: #fff;
+  font-size: 1.3rem;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+}

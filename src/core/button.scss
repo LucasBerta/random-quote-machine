@@ -1,0 +1,27 @@
+$height: 4.4rem;
+$paddingVer: 1.4rem;
+$paddingHor: 1.8rem;
+$fontSize: 1.4rem;
+
+button {
+  height: $height;
+  padding: $paddingVer $paddingHor;
+  color: #fff;
+  font-size: $fontSize;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: opacity 0.2s ease-in-out;
+
+  &,
+  &:focus,
+  &:active,
+  &:checked {
+    border: none;
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
