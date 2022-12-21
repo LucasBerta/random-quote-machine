@@ -65,24 +65,24 @@ function App() {
 
   return (
     <div className='app' style={{ backgroundColor: color }}>
-      <div className='card'>
-        <span className='quote' style={{ color }}>
+      <div id='quote-box' className='card'>
+        <span id='text' className='quote' style={{ color }}>
           <i className='quote-icon fa-solid fa-quote-left' style={{ color }}></i>
           {quote.quote}
         </span>
-        <span className='author' style={{ color }}>
+        <span id='author' className='author' style={{ color }}>
           - {quote.author}
         </span>
         <div className='cta'>
           <div className='social-medias'>
-            <a href={getTwitterHref()} target='_blank' rel='noreferrer' style={{ backgroundColor: color }}>
-              <i class='fa-brands fa-twitter'></i>
+            <a id='tweet-quote' href={getTwitterHref()} target='_blank' rel='noreferrer' style={{ backgroundColor: color }}>
+              <i className='fa-brands fa-twitter'></i>
             </a>
-            <a href={getTumblrHref()} target='_blank' rel='noreferrer' style={{ backgroundColor: color }}>
-              <i class='fa-brands fa-tumblr'></i>
+            <a id='tumblr-quote' href={getTumblrHref()} target='_blank' rel='noreferrer' style={{ backgroundColor: color }}>
+              <i className='fa-brands fa-tumblr'></i>
             </a>
           </div>
-          <button className='new-quote' style={{ backgroundColor: color }} onClick={refreshQuote}>
+          <button id='new-quote' className='new-quote' style={{ backgroundColor: color }} onClick={refreshQuote}>
             New quote
           </button>
         </div>

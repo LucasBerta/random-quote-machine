@@ -17,6 +17,10 @@ $spacing: 2rem;
   border-radius: 3px;
   padding: 4rem 5rem;
   box-shadow: 0rem 0.6rem 1.5rem -0.5rem #000;
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
 }
 
 .quote {
